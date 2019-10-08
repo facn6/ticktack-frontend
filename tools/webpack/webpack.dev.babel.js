@@ -1,6 +1,3 @@
-/* eslint import/no-extraneous-dependencies: ["error", { devDependencies: true }] */
-
-import webpack from 'webpack';
 import merge from 'webpack-merge';
 
 // HELPERS

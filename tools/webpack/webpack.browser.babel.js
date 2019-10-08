@@ -1,5 +1,3 @@
-/* eslint import/no-extraneous-dependencies: ["error", { devDependencies: true }] */
-
 import path from 'path';
 import merge from 'webpack-merge';
 
@@ -60,13 +58,6 @@ module.exports = merge(commonConfig, {
                 loadableStateTag: null,
                 initialStateTag: null,
             },
-        }),
-
-        new HtmlWebpackPlugin({
-            chunksSortMode: 'dependency',
-            inject: 'body',
-            filename: 'index.ejs',
-            template: `!!raw-loader!${path.resolve(PATH_SRC, 'index.ejs')}`,
         }),
 
         new MiniCssExtractPlugin({

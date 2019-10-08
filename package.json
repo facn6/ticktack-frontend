@@ -24,7 +24,7 @@
             }
         },
         "start:prod": {
-            "command": "pm2 start ./pm2/prod.config.js",
+            "command": "pm2 start --interpreter babel-node ./pm2/prod.config.js",
             "env": {
                 "NODE_PATH": "./src",
                 "NODE_ENV": "production"
@@ -51,6 +51,9 @@
         }
     },
     "dependencies": {
+        "@babel/core": "^7.0.1",
+        "@babel/register": "^7.0.0",
+        "@loadable/component": "^5.10.3",
         "axios": "0.18.x",
         "chalk": "2.4.x",
         "classnames": "2.2.x",
@@ -94,7 +97,6 @@
     },
     "devDependencies": {
         "@babel/cli": "7.0.x",
-        "@babel/core": "7.0.x",
         "@babel/node": "7.0.x",
         "@babel/plugin-proposal-class-properties": "7.0.x",
         "@babel/plugin-proposal-decorators": "7.0.x",
@@ -102,7 +104,6 @@
         "@babel/polyfill": "7.0.x",
         "@babel/preset-env": "7.0.x",
         "@babel/preset-react": "7.0.x",
-        "@babel/register": "7.0.x",
         "autoprefixer": "9.1.x",
         "babel-eslint": "9.0.x",
         "babel-loader": "8.0.x",

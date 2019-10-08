@@ -1,5 +1,3 @@
-/* eslint import/no-extraneous-dependencies: ["error", { devDependencies: true }] */
-
 import path from 'path';
 import webpack from 'webpack';
 import dotenv from 'dotenv';
@@ -7,6 +5,7 @@ import dotenv from 'dotenv';
 // PLUGINS
 
 import FriendlyErrorsWebpackPlugin from 'friendly-errors-webpack-plugin';
+import UglifyJsPlugin from 'uglifyjs-webpack-plugin';
 
 // HELPERS
 
@@ -67,11 +66,17 @@ module.exports = {
     },
     plugins: [
         new webpack.EnvironmentPlugin({ NODE_ENV: JSON.stringify(process.env.NODE_ENV) }),
-        new webpack.EnvironmentPlugin(['PORT', 'SSL_PORT', 'API_URL']),
+
+        new webpack.EnvironmentPlugin(['PORT', 'SSL_PORT', 'API_URL', 'IMAGES_URL', 'DEFAULT_IMAGE_URL', 'STRIPE_KEY']),
+
+        new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/),
 
         new FriendlyErrorsWebpackPlugin(),
     ],
     optimization: {
+        minimizer: [
+            new UglifyJsPlugin({}),
+        ],
         splitChunks: {
             chunks: 'all',
         },

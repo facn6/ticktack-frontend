@@ -10,7 +10,7 @@ import universalCookie from 'universal-cookie-express';
 
 // import favicon from 'serve-favicon';
 
-import reactApplication from './middleware/reactApplication';
+// import reactApplication from './middleware/reactApplication';
 import { PATH_DIST } from '../tools/paths';
 
 const isDevelopment = process.env.NODE_ENV === 'development';
@@ -27,16 +27,16 @@ app.use(compression());
 app.use(universalCookie());
 
 if (isDevelopment) {
-    app.get('*.*', proxy('http://localhost:3001/'));
+    app.get('*', proxy('http://localhost:3001/'));
 } else {
-    app.get('*.*', express.static(PATH_DIST));
+    app.get('*', express.static(PATH_DIST));
 }
 
-app.get('*', reactApplication);
+// app.get('*', reactApplication);
 
-// app.listen(3000, () => {
-//     console.info(chalk.green('==> HTTP server listening at port 3000'));
-// });
+app.listen(3000, () => {
+    console.info(chalk.green('==> HTTP server listening at port 3000'));
+});
 
 export default app;
 

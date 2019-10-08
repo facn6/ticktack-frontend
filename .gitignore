@@ -4,6 +4,7 @@ node_modules
 # Public
 public/assets
 public/webpack-assets.json
+public
 
 # Environment
 .env
