@@ -1,0 +1,14 @@
+@import 'theme/utils';
+
+.main {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 1em;
+
+    > textarea {
+        @extend %input-default;
+        min-height: 100%;
+        height: auto;
+    }
+}

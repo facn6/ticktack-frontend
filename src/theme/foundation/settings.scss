@@ -1,0 +1,31 @@
+$global-width:   1245px;
+$global-flexbox: true;
+
+$grid-columns: 24;
+
+$body-background:           none;
+$offcanvas-background:      none;
+$offcanvas-exit-background: none;
+
+$grid-container-padding: (
+    small: 30px,
+    large: 0px,
+);
+
+$grid-margin-gutters: (
+    small: 0px,
+    large: 30px,
+);
+
+$grid-padding-gutters: (
+    small: 0px,
+    large: 30px,
+);
+
+$breakpoints: (
+    small:   0px,
+    medium:  0px,
+    large:   1280px,
+    xlarge:  1280px,
+    xxlarge: 1280px,
+);

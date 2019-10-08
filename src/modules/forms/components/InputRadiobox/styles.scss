@@ -1,0 +1,58 @@
+@import 'theme/utils';
+
+.radiobox {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    font-size: 1em;
+    line-height: 1;
+    cursor: pointer;
+
+    .input {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 1px;
+        height: 1px;
+        opacity: 0;
+
+        &:checked + .indicator:after {
+            opacity: 1;
+        }
+    }
+
+    .indicator {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex: 0 0 auto;
+        width: 24px;
+        height: 24px;
+        padding: 5px;
+        border: 1px solid #000000;
+        border-radius: 50%;
+        font-size: 12px;
+
+        &:after {
+            content: '';
+            display: block;
+            flex: 0 0 auto;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: #000000;
+            opacity: 0;
+        }
+    }
+
+    .content {
+        display: block;
+        flex: 1 1 auto;
+        margin: 0 0 0 10px;
+        line-height: initial;
+    }
+}

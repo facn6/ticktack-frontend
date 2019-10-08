@@ -1,0 +1,43 @@
+@import 'theme/utils';
+
+.main {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font-size: 1em;
+
+    .input {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .indicator {
+        @extend %input-default;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+
+        > .value {
+            display: block;
+            flex: 1 1 auto;
+            line-height: 1;
+        }
+
+        > .icon {
+            display: block;
+            flex: 0 0 auto;
+            margin-left: 10px;
+            font-size: 10px;
+            line-height: 1;
+        }
+    }
+}

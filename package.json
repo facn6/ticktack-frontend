@@ -1,0 +1,161 @@
+{
+    "name": "react-starter",
+    "version": "0.0.1",
+    "description": "",
+    "engines": {
+        "node": ">=8.0",
+        "npm": ">=5.0"
+    },
+    "scripts": {
+        "dev": "bnr dev",
+        "build": "npm run clean:build && better-npm-run build",
+        "start:prod": "better-npm-run start:prod",
+        "clean:build": "better-npm-run clean:build",
+        "analyze": "npm run clean:build && better-npm-run analyze",
+        "lint": "better-npm-run lint"
+    },
+    "betterScripts": {
+        "dev": {
+            "command": "webpack-dev-server --progress --colors --hot --inline --config tools/webpack/webpack.dev.babel.js",
+            "env": {
+                "NODE_PATH": "./src",
+                "NODE_ENV": "development",
+                "DISABLE_SSR": false
+            }
+        },
+        "start:prod": {
+            "command": "pm2 start ./pm2/prod.config.js",
+            "env": {
+                "NODE_PATH": "./src",
+                "NODE_ENV": "production"
+            }
+        },
+        "build": {
+            "command": "webpack --progress --hide-modules --config ./tools/webpack/webpack.prod.babel.js",
+            "env": {
+                "NODE_ENV": "production"
+            }
+        },
+        "clean:build": {
+            "command": "rimraf ./public/assets"
+        },
+        "analyze": {
+            "command": "webpack --progress --hide-modules --config ./tools/webpack/webpack.prod.babel.js",
+            "env": {
+                "NODE_ENV": "production",
+                "ANALYZE": true
+            }
+        },
+        "lint": {
+            "command": "eslint --fix ./src ./tools ./index.js"
+        }
+    },
+    "dependencies": {
+        "axios": "0.18.x",
+        "chalk": "2.4.x",
+        "classnames": "2.2.x",
+        "compression": "1.7.x",
+        "core-js": "2.5.x",
+        "dotenv": "6.0.x",
+        "ejs": "2.6.x",
+        "express": "4.16.x",
+        "express-http-proxy": "1.2.x",
+        "formik": "1.3.x",
+        "foundation-sites": "6.4.x",
+        "hpp": "0.2.x",
+        "localforage": "1.7.x",
+        "lodash": "4.17.x",
+        "lodash-es": "4.17.x",
+        "moment": "2.22.x",
+        "morgan": "^1.9.0",
+        "normalize.css": "8.0.x",
+        "prop-types": "15.6.x",
+        "quick-redux": "1.1.x",
+        "react": "16.5.x",
+        "react-burger-menu": "2.5.x",
+        "react-datepicker": "1.6.x",
+        "react-dom": "16.5.x",
+        "react-helmet": "5.2.x",
+        "react-hot-loader": "4.3.x",
+        "react-redux": "5.0.x",
+        "react-router": "3.2.x",
+        "react-router-redux": "4.0.x",
+        "react-router-scroll": "0.4.x",
+        "redux": "3.7.x",
+        "redux-connect": "6.0.x",
+        "redux-persist": "5.10.x",
+        "serialize-javascript": "1.5.x",
+        "serve-favicon": "2.5.x",
+        "shrink-ray": "0.1.x",
+        "spdy": "3.4.x",
+        "universal-cookie": "3.0.x",
+        "universal-cookie-express": "3.0.x",
+        "yup": "0.26.x"
+    },
+    "devDependencies": {
+        "@babel/cli": "7.0.x",
+        "@babel/core": "7.0.x",
+        "@babel/node": "7.0.x",
+        "@babel/plugin-proposal-class-properties": "7.0.x",
+        "@babel/plugin-proposal-decorators": "7.0.x",
+        "@babel/plugin-proposal-export-default-from": "7.0.x",
+        "@babel/polyfill": "7.0.x",
+        "@babel/preset-env": "7.0.x",
+        "@babel/preset-react": "7.0.x",
+        "@babel/register": "7.0.x",
+        "autoprefixer": "9.1.x",
+        "babel-eslint": "9.0.x",
+        "babel-loader": "8.0.x",
+        "babel-plugin-dynamic-import-node": "2.1.x",
+        "babel-plugin-react-css-modules": "3.4.x",
+        "babel-plugin-transform-decorators-legacy": "1.3.x",
+        "babel-plugin-transform-remove-console": "6.9.x",
+        "better-npm-run": "0.1.x",
+        "compression-webpack-plugin": "2.0.x",
+        "css-loader": "1.0.x",
+        "ejs-loader": "0.3.x",
+        "eslint": "4.19.x",
+        "eslint-config-airbnb": "16.1.x",
+        "eslint-import-resolver-webpack": "0.10.x",
+        "eslint-loader": "2.0.x",
+        "eslint-plugin-import": "2.13.x",
+        "eslint-plugin-jsx-a11y": "6.0.x",
+        "eslint-plugin-react": "7.10.x",
+        "file-loader": "2.0.x",
+        "friendly-errors-webpack-plugin": "1.7.x",
+        "html-minifier": "3.5.x",
+        "html-webpack-plugin": "3.2.x",
+        "imagemin-webpack-plugin": "2.2.x",
+        "mini-css-extract-plugin": "0.4.x",
+        "node-sass": "4.9.x",
+        "postcss": "7.0.x",
+        "postcss-loader": "3.0.x",
+        "postcss-scss": "2.0.x",
+        "raw-loader": "0.5.x",
+        "require-from-string": "2.0.x",
+        "resolve-url-loader": "2.3.x",
+        "rimraf": "2.6.x",
+        "sass-loader": "7.1.x",
+        "style-loader": "0.23.x",
+        "url-loader": "1.1.x",
+        "webpack": "4.18.x",
+        "webpack-bundle-analyzer": "3.0.x",
+        "webpack-cli": "3.1.x",
+        "webpack-dev-middleware": "3.3.x",
+        "webpack-dev-server": "3.1.x",
+        "webpack-hot-middleware": "2.23.x",
+        "webpack-merge": "4.1.x",
+        "webpack-node-externals": "1.7.x"
+    },
+    "resolutions": {
+        "webpack-sources": "1.1.x"
+    },
+    "browserslist": [
+        "last 1 versions",
+        ">= 0.2%",
+        "IE >= 10",
+        "Safari >= 8",
+        "iOS >= 8",
+        "Android >= 4.4"
+    ]
+}

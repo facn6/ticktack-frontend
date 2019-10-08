@@ -1,0 +1,12 @@
+@import 'theme/utils';
+
+.main {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 1em;
+
+    > input {
+        @extend %input-default;
+    }
+}

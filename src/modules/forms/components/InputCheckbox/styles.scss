@@ -1,0 +1,64 @@
+@import 'theme/utils';
+
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 0 0 auto;
+    position: relative;
+    max-width: 100%;
+    font-size: 1em;
+    cursor: pointer;
+
+    .input {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        width: 2em;
+        height: 2em;
+        font-size: 12px;
+        opacity: 0;
+
+        &:checked + .indicator {
+            .icon {
+                opacity: 1;
+            }
+        }
+    }
+
+    .indicator {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex: 0 0 auto;
+        width: 2em;
+        height: 2em;
+        border: 1px solid #d8d8d8;
+        border-radius: 3px;
+        background: #ffffff;
+        color: #000000;
+        font-size: 12px;
+        text-align: center;
+
+        > .icon {
+            display: block;
+            opacity: 0;
+        }
+    }
+
+    .content {
+        display: block;
+        flex: 1 1 auto;
+        margin: 0 0 0 10px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+
+        &:empty {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,18 @@
+# Vendor
+node_modules
+
+# Public
+public/assets
+public/webpack-assets.json
+
+# Environment
+.env
+
+# Development
+src/DevPage.jsx
+
+# Logs
+*.log
+
+# Other
+.DS_Store

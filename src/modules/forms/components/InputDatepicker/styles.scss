@@ -1,0 +1,59 @@
+@import 'theme/utils';
+
+.main {
+    display: block;
+    height: 100%;
+    font-size: 1em;
+
+    .indicator {
+        @extend %input-default;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: stretch;
+        padding: 0;
+        max-height: 100%;
+    }
+
+    .input {
+        display: block;
+        flex: 1 1 auto;
+        height: 100%;
+
+        > div {
+            height: 100%;
+        }
+    }
+
+    .icon {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex: 0 0 auto;
+        width: 35px;
+        font-size: 18px;
+        background: #666666;
+    }
+
+    :global(.react-datepicker-wrapper) {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    :global(.react-datepicker__input-container) {
+        display: block;
+        width: 100%;
+        height: 100%;
+
+        > input {
+            display: block;
+            width: 100%;
+            height: 100%;
+            padding: 0 6px;
+            border: none;
+            font-size: 1em;
+        }
+    }
+}
