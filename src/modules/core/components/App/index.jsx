@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Helmet from 'react-helmet';
 import { hot } from 'react-hot-loader';
-
+import Navbar from '@/modules/common/components/Navbar';
 import config from '@/config';
 
 import { ModalProvider } from '@/modules/core/context/modal';
@@ -18,6 +18,7 @@ class App extends Component {
             <div styleName="main">
                 <Helmet {...config.helmet} />
                 <ModalProvider>
+                    <Navbar />
                     <main>{children}</main>
                     <AppModal />
                 </ModalProvider>

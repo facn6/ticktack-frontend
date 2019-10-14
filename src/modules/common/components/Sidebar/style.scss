@@ -1,0 +1,74 @@
+@import 'theme/utils';
+
+.sidebar{
+    background-color: white;
+        display: flex;
+        flex-direction: column;
+        top:0;
+        position: absolute;
+        right: -1000px;
+        transition: 1s all;
+        min-height: 100vh;
+        z-index: 5;
+        width: 70%;
+        overflow-y: scroll;
+        text-align: right;
+        .sidebar-close{
+           text-align: right;
+        }
+        .dropdown{
+            max-height: 42px;
+            overflow: hidden;
+            transition: 1s all;
+        
+            .dropdown-btn {
+                padding: 6px 8px 6px 16px;
+                text-decoration: none;
+                font-size: 20px;
+                color: #818181;
+                display: block;
+                border: none;
+                background: none;
+                width: 100%;
+                text-align: right;
+                cursor: pointer;
+                outline: none;
+                .dropdown-btn:hover {
+                    color: #f1f1f1;
+                }
+
+        
+            }
+            
+            
+            .dropdown-container {
+                display: flex;
+                flex-direction: column;
+                padding-left: 8px;
+                .dropdown-children{
+                    background-color:whitesmoke;
+                    &:hover{
+                        background-color: white;
+                    }
+                }
+            }
+            .open-dropdown-button{
+                color:blue;
+            }
+         
+    }
+
+    .open-dropdown{
+        
+        max-height: 150px;
+    }
+
+
+    
+}
+
+
+.openSidebar{
+    right:0;
+           
+    }

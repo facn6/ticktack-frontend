@@ -4,7 +4,7 @@ export default class Home extends PureComponent {
 
     render() {
         return (
-            <div>
+            <div style={{ backgroundColor:'black' }}>
                 <p>Home Page</p>
             </div>
         );
