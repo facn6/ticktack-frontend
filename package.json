@@ -54,6 +54,7 @@
         "@babel/core": "^7.0.1",
         "@babel/register": "^7.0.0",
         "@loadable/component": "^5.10.3",
+        "@material-ui/icons": "^4.5.1",
         "axios": "0.18.x",
         "chalk": "2.4.x",
         "classnames": "2.2.x",
