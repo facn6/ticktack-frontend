@@ -1,12 +1,14 @@
 import React, { PureComponent } from 'react';
-import Image from '@/modules/common/components/Image';
+import Banner from '@/modules/common/components/Banner';
+import RotatingCube from '@/modules/common/components/RotatingCube';
 
 export default class Home extends PureComponent {
 
     render() {
         return (
             <div>
-                <Image />
+                <Banner />
+                <RotatingCube />
             </div>
         );
     }
