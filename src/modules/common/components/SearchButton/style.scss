@@ -1,0 +1,31 @@
+@import 'theme/utils';
+
+
+.main-search-button{
+    display: flex;
+    justify-content: center;
+    .search-button{
+        background-color: rgb(75, 148, 197);
+        border: 13px solid black;
+        border-color: white;
+        border-radius: 10px;
+        padding: 14px 28px;
+        font-size: 20px;
+        color:white;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        font-size: 16px;
+        cursor: pointer;
+        text-align: center;
+        text-shadow: 1px 0 0;
+        width:90%;
+        max-height: 70px;
+        .button-icon{
+            width:20px;
+            height:20px;
+            margin-right: 2%;
+        }
+    }
+}
