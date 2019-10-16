@@ -2,21 +2,26 @@ import React from 'react';
 import './style.scss';
 
 class Slider extends React.Component {
-  constructor(props) {
-      super(props);
-  this.state =  { scroll:3000 };
-}
 
-componentDidMount() {
-  const el = document.querySelector('#middle');
-  el.scrollLeft = this.state.scroll;
-    this.setState({ scroll:1000 });
-}
+    async componentDidMount() {
+
+        const interval = setInterval(() => {
+            if (document.readyState === 'complete') {
+                clearInterval(interval);
+                this.slider.scrollLeft = 1000;
+            }
+        }, 100);
+    }
 
     render() {
+
         return (
             <div styleName="gallery">
-                <div id="middle" styleName="gallery_scroller">
+                <div
+                    // eslint-disable-next-line no-return-assign
+                    ref={(el) => this.slider = el}
+                    styleName="gallery_scroller"
+                >
                     <div>
                         {/* <img src={require('@/assets/images/concert.jpg')} alt="concert-img" /> */}
                     </div>
