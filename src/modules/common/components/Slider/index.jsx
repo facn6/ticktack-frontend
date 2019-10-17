@@ -10,7 +10,6 @@ class Slider extends React.Component {
 componentDidMount() {
   const el = document.querySelector('#middle');
   el.scrollLeft = this.state.scroll;
-    this.setState({ scroll:1000 });
 }
 
     render() {
