@@ -3,7 +3,16 @@
 .gallery {
   position: relative;
   max-width: 800px;
-  padding: 0 10;
+  padding: 25px 5px 0px 0px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+
+}
+
+.gallery2 {
+  font-size: 20px;
 
 }
 
@@ -15,10 +24,11 @@
 
     display: flex;
 
+
     transition: 0.5s all;
 
     align-items: center;
-    height: 500px;
+    min-height: 30vh;
 
     /* Enable Safari touch scrolling physics which is needed for scroll snap */
     -webkit-overflow-scrolling: touch;
@@ -29,41 +39,45 @@
   /* snap align center  */
   scroll-snap-align: center;
   margin: 10px;
-min-width: 300px;
-min-height: 150px;
-border: solid 2px;
+min-width: 70vw;
 
-// img {
-//   width: 100%;
-// }
-  /* max-width: 100vw; */
+
+  height: 30vh;
+
 
   position: relative;
 }
-
 .gallery_scroller img {
   border-radius: 10px;
+  width: 100%;
+  height: 100%;
 }
 
-.gallery_scroller div.colored_card {
-  min-width: 75%;
-  min-height: 95%;
-  border-radius: 10px;
+.kira {
+    top: 10%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    color:white;
+    text-align: right;
+    font-family: sans-serif;
+    font-size: 14px;
+
+
+
+
+.kira2 {
+    font-weight: bold;
+    font-size: 16px;
+}
 }
 
-.gallery div.note {
-  position: absolute;
-
-  /* vertically align center */
-  top: 50%;
-  transform: translateY(-50%);
-  left: 0;
-  right: 0;
-
-  background: rgba(0, 0, 0, 0.6);
-  padding: 20px;
-  position: absolute;
-
-  font-size: 4em;
-  color: white;
-}
+.icon {
+border-radius: 50%;
+min-width: 15vw;
+background-color: azure;
+top: 70%;
+left: 5.5%;
+z-index:1;
+position: absolute;
+padding: 10px;
+    }
