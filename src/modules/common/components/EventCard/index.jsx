@@ -9,7 +9,7 @@ class EventCard extends React.Component {
                 <img src={require('@/assets/images/barca-real.jpg')} alt="event-img" styleName="event-img" />
                 <div styleName="burger-menu">
                     <div styleName="burger-icon">
-                        <img src={require('@/assets/icons/circle.png')} alt="mashrom-icon" styleName="mashrom" />
+                        <div styleName="mashrom" />
                         <img src={require('@/assets/icons/seen.svg')} alt="seen-icon" styleName="seen-icon" />
                         <span styleName="view-res">12k</span>
                         <div />
@@ -18,17 +18,17 @@ class EventCard extends React.Component {
                 <div styleName="card-content">
                     <h1 styleName="title">שם של האירוע</h1>
                     <p styleName="sub-title">תת כותרת</p>
-                    <div>
+                    <div styleName="date-from">
                         <h4>מתאריך: </h4>
                         <h4>06/06/2019</h4>
                     </div>
-                    <div>
-                        <h4>עד</h4>
+                    <div styleName="date-to">
+                        <h4> עד</h4>
                         <h4>09/06/2019</h4>
                     </div>
                 </div>
                 <div styleName="card-price">
-                    <h4>החל מ-</h4>
+                    <h4 styleName="card-price-title">החל מ-</h4>
                     <p styleName="price">586$</p>
                 </div>
 
