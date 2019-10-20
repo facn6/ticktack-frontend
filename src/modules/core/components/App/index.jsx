@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Helmet from 'react-helmet';
 import { hot } from 'react-hot-loader';
 import Navbar from '@/modules/common/components/Navbar';
+import Footer from '@/modules/common/components/Footer';
 import config from '@/config';
 
 import { ModalProvider } from '@/modules/core/context/modal';
@@ -20,6 +21,7 @@ class App extends Component {
                 <ModalProvider>
                     <Navbar />
                     <main>{children}</main>
+                    <Footer />
                     <AppModal />
                 </ModalProvider>
             </div>
