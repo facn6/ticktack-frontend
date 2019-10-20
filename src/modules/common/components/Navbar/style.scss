@@ -11,16 +11,16 @@ $icon_height:25px;
     height:55px;
     position: relative;
     border-bottom:1px solid black;
-    
+
     .navbar-left-icons{
         display: flex;
 
-    
+
         .icon {
             &:nth-child(2){
                 margin-left: 10px;
             }
-         
+
             width:$icon_widht;
             height:$icon_height;
         }
@@ -31,7 +31,7 @@ $icon_height:25px;
         flex-grow: 1;
         max-width: 40%;
         margin-left:30px;
-        margin-right:90px;                        
+        margin-right:90px;
     }
 
     .burger-menu-container{
@@ -56,13 +56,13 @@ $icon_height:25px;
                     background-color: black;
                     margin-top: 3px;
                 }
-            }  
-            
-            
+            }
+
+
             .mushroom {
                 width:70px;
                 height: 70px;
-                
+
             }
         }
     }
