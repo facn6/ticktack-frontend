@@ -129,7 +129,7 @@
         "html-webpack-plugin": "3.2.x",
         "imagemin-webpack-plugin": "2.2.x",
         "mini-css-extract-plugin": "0.4.x",
-        "node-sass": "4.9.x",
+        "node-sass": "^4.9.4",
         "postcss": "7.0.x",
         "postcss-loader": "3.0.x",
         "postcss-scss": "2.0.x",
