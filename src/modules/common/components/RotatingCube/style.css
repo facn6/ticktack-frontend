@@ -11,6 +11,8 @@
 .main-cube{
     display: flex;
     align-items: center; 
+    margin:15% 15% 15% 15%;
+
 
     /* justify-content: center; 
     max-height: 90px; */

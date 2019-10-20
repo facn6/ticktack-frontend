@@ -1,0 +1,84 @@
+@import 'theme/utils';
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    border: 13px solid white;
+
+    width: 80%;
+    margin: auto;
+    margin-top:25%;
+    // text-align: center;
+    font-family: arial;
+    .event-img{
+        text-align: center;
+        width:100%;
+        height:300px;
+    }
+    .burger-menu{
+        position: relative;
+        margin-top:30%;
+        .burger-icon{
+            position: absolute;
+            transform: translateX(-50%) scale(1,1.5);
+            left:15%;
+            bottom: 32px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .mashrom{
+                width: 55px;
+                height: 70px;
+            }
+    
+            .seen-icon{
+                position: absolute;
+                transform: translateX(-50%) scale(1,1.5);
+                left:50%;
+                bottom: 50px;
+                display: flex;
+                width:20px;
+                height: 15px;
+                flex-direction: column;
+                align-items: center;
+
+            }
+            .view-res{
+                position: absolute;
+                transform: translateX(-50%) scale(1,1.5);
+                left:50%;
+                bottom: 20px;
+                display: flex;
+                width:25px;
+                height: 25px;
+                flex-direction: column;
+                align-items: center;    
+                font-size: 12px;
+            }
+        
+        }
+}
+    
+      
+    
+    .card-content{
+        text-align: right;
+    
+        .title{
+            color:rgb(33, 160, 199);
+            font-size:20px;
+        }
+        .sub-title {
+            color: grey;
+            font-size: 18px;
+        }
+    }
+    .card-price{
+        text-align: left;
+        .price{
+
+        }
+    }
+  }
+
+  
