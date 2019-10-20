@@ -4,62 +4,50 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 15px;
     border: 13px ;
-    width: 80%;
+    width: 90%;
     margin: auto;
-    margin-top:25%;
+    margin-top:5%;
     font-family: arial;
     // height: 330px;
     
     .event-img{
         text-align: center;
         width:100%;
-        height:200px;
+        height:250px;
         border-radius: 15px 15px 0px 0px;
     }
-    .burger-menu{
-        position: relative;
-        .burger-icon{
-            position: absolute;
-            transform: translateX(-70%) scale(1,1.7);
-            left:15%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+
             .mashrom{
-                width: 40px;
-                height: 40px;
+                width: 60px;
+                height: 60px;
                 border-radius: 50%;
                 background-color: white;
-                margin-bottom:25px;
-            }
-    
-            .seen-icon{
+                bottom: -30px;
+                margin-left: 10px;
                 position: absolute;
-                transform: translateX(-50%) scale(0.9,1);
-                left:50%;
-                bottom: 52px;
                 display: flex;
-                width:20px;
-                height: 10px;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                
+            .seen-icon{
+                display: flex;
+                width:30px;
+                height: 30px;
                 flex-direction: column;
                 align-items: center;
 
             }
             .view-res{
-                position: absolute;
-                transform: translateX(-50%) scale(1,1.5);
-                left:50%;
-                bottom: 20px;
                 display: flex;
                 width:25px;
                 height: 25px;
                 flex-direction: column;
                 align-items: center;    
-                font-size: 7px;
+                font-size: 20px;
             }
-        
         }
-}
+        
     
       
     
@@ -67,6 +55,7 @@
         text-align: right;
         margin-top:10%;
         padding-bottom: 20px;
+        margin-right: 15px;
     
         .title{
             color:rgb(33, 160, 199);
@@ -83,9 +72,6 @@
             font-size:13px;
             direction: rtl;
         
-            
-
-
         }
         .date-to{
             display: flex;

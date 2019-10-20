@@ -6,15 +6,14 @@ class EventCard extends React.Component {
     render() {
         return (
             <div styleName="card">
-                <img src={require('@/assets/images/barca-real.jpg')} alt="event-img" styleName="event-img" />
-                <div styleName="burger-menu">
-                    <div styleName="burger-icon">
-                        <div styleName="mashrom" />
+                <div style={{ position:'relative' }}>
+                    <img src={require('@/assets/images/barca-real.jpg')} alt="event-img" styleName="event-img" />
+                    <div styleName="mashrom">
                         <img src={require('@/assets/icons/seen.svg')} alt="seen-icon" styleName="seen-icon" />
                         <span styleName="view-res">12k</span>
-                        <div />
                     </div>
                 </div>
+                <div />
                 <div styleName="card-content">
                     <h1 styleName="title">שם של האירוע</h1>
                     <p styleName="sub-title">תת כותרת</p>

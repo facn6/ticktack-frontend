@@ -13,12 +13,19 @@ export default class Home extends PureComponent {
         return (
             <div>
                 <Banner />
-
-              <Slider />
+                <Slider />
                 <RotatingCube />
-                <EventCard />
+                <div style={{ margin: '50px 0px' }}>
+
+                    <EventCard />
+                    <EventCard />
+
+                    <EventCard />
+                </div>
+
+
             </div>
         );
     }
 
-
+}
