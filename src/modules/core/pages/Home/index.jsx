@@ -2,7 +2,9 @@ import React, { PureComponent } from 'react';
 
 import Banner from '@/modules/common/components/Banner';
 import RotatingCube from '@/modules/common/components/RotatingCube';
+
 import Slider from '@/modules/common/components/Slider';
+
 
 export default class Home extends PureComponent {
 
@@ -10,7 +12,8 @@ export default class Home extends PureComponent {
         return (
             <div>
                 <Banner />
-            <Slider />
+
+              <Slider />
                 <RotatingCube />
             </div>
         );
