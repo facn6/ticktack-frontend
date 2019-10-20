@@ -21,7 +21,7 @@ class Sidebar extends React.Component {
                         <a href="/" styleName="dropdown-children">Link 1</a>
                         <a href="/" styleName="dropdown-children">Link 2</a>
                         <a href="/" styleName="dropdown-children">Link 3</a>
-                    </div>
+                    </div>/
                 </div>
                 <div styleName={classnames('dropdown', { 'open-dropdown':this.state['2'] })}>
                     <button styleName={classnames('dropdown-btn', { 'open-dropdown-button':this.state['2'] })} onClick={() => this.setState({ '2': !this.state['2'] })}>הופעות</button>

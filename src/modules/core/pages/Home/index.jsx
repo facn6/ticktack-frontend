@@ -1,11 +1,14 @@
 import React, { PureComponent } from 'react';
+import Banner from '@/modules/common/components/Banner';
+import RotatingCube from '@/modules/common/components/RotatingCube';
 
 export default class Home extends PureComponent {
 
     render() {
         return (
-            <div style={{ backgroundColor:'black' }}>
-                <p>Home Page</p>
+            <div>
+                <Banner />
+                <RotatingCube />
             </div>
         );
     }
