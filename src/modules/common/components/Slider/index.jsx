@@ -17,12 +17,12 @@ class Slider extends React.Component {
 
         return (
             <div styleName="gallery">
-            <div styleName="gallery2">
+                <div styleName="gallery2">
             בחר את האירועים הפופולריים ביותר
-            </div>
-            <div>
+                </div>
+                <div style={{ marginBottom:'10px' }}>
             !אנחנו כאן בשבילך
-            </div>
+                </div>
                 <div
                     // eslint-disable-next-line no-return-assign
                     ref={(el) => this.slider = el}
@@ -44,16 +44,16 @@ class Slider extends React.Component {
                         </div>
                     </div>
                     <div>
-                      <img src={require('@/assets/images/tennis.jpg')} alt="tennis-img" />
-                      <div styleName="kira">
-                          <p styleName="kira2">טקסט כלשהו</p>
-                          <p>12/11/2019 - 04/05/2019</p>
-                      </div>
+                        <img src={require('@/assets/images/tennis.jpg')} alt="tennis-img" />
+                        <div styleName="kira">
+                            <p styleName="kira2">טקסט כלשהו</p>
+                            <p>12/11/2019 - 04/05/2019</p>
+                        </div>
                     </div>
                 </div>
                 <div styleName="icon">
-                <img src={require('@/assets/icons/email.svg')} alt="email-img" />
-</div>
+                    <img src={require('@/assets/icons/email.svg')} alt="email-img" />
+                </div>
             </div>
         );
     }
