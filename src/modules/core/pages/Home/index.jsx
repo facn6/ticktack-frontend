@@ -21,7 +21,6 @@ export default class Home extends PureComponent {
                 <p styleName="last-event-label">חבילות או אירועים שמשתמשים צפו לאחרונה</p>
                 <EventCard />
                 <EventCard />
-
                 <EventCard />
             </div>
 
