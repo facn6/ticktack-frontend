@@ -4,6 +4,7 @@ import { routerReducer as routing } from 'react-router-redux';
 import { combineReducers } from 'redux';
 import { reducer as reduxAsyncConnect } from 'redux-connect';
 import { persistReducer } from 'redux-persist';
+import coreReducer from '@/modules/core/reducer';
 
 const persistConfig = {
     key: 'root',
@@ -12,6 +13,7 @@ const persistConfig = {
 };
 
 const modules = {
+    core: coreReducer,
 };
 
 const reducers = {
