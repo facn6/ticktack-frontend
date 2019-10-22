@@ -11,7 +11,6 @@ import { withModal } from '@/modules/core/hoc/withModal';
             <div>
                 <Banner />
               <Slider />
-                <RotatingCube />
             </div>
         );
     }
