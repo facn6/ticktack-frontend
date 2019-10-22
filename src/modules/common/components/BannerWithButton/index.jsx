@@ -1,8 +1,8 @@
 import React from 'react';
 import './style.scss';
-import Button from '../Button';
+import SearchButton from '../SearchButton';
 
-class Image extends React.Component {
+class BannerWithButton extends React.Component {
 
     render() {
         return (
@@ -12,10 +12,10 @@ class Image extends React.Component {
                     <div styleName="main-title">אריאנה גרנדה בוינה</div>
                     <div styleName="sub-title"> שירות טקטים 360 - הדרך שלכם להבטיח את החבילה המושלמת!</div>
                 </div>
-                <Button />
+                <SearchButton />
             </div>
         );
     }
 
 }
-export default Image;
+export default BannerWithButton;
