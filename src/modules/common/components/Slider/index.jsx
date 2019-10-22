@@ -18,10 +18,10 @@ class Slider extends React.Component {
         return (
             <div styleName="gallery">
                 <div styleName="gallery2">
-            בחר את האירועים הפופולריים ביותר
+                    בחר את האירועים הפופולריים ביותר
                 </div>
-                <div style={{ marginBottom:'10px' }}>
-            !אנחנו כאן בשבילך
+                <div style={{ marginBottom: '10px' }}>
+                    !אנחנו כאן בשבילך
                 </div>
                 <div
                     // eslint-disable-next-line no-return-assign
