@@ -10,10 +10,8 @@ export default class Ticket extends PureComponent {
         return (
             <div styleName="ticket-page">
                 <Banner />
-
                 <DetailsArtistContainer />
             </div>
-
         );
     }
 
