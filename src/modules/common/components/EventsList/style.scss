@@ -1,17 +1,24 @@
 .list{
   text-align: center;
+
 }
 
-.button{
+.parent{
   background-color: white;
-  width:100%;
-  display: block;
   margin-top: 10px;
   padding:10px 3px 10px 3px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: space-between;
 }
 
 .title{
   margin-top: 30px;
   margin-left: 100px;
   font-size: 25px;
+}
+
+.city{
+
 }

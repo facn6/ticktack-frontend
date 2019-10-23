@@ -8,9 +8,14 @@ class EventsList extends React.Component {
         return (
             <div styleName="list">
             <h1 styleName="title">כל האירועים של אן מארי</h1>
-
-                    <button styleName="button"><span>פריז</span></button>
-                      <button styleName="button"><span>לונדון</span></button>
+                    <div styleName="parent">
+                    <div styleName="city">12.03.2019</div>
+                    <div styleName="city">פריז</div>
+                    </div>
+                      <div styleName="parent">
+                       <div styleName="city">13.03.2019</div>
+                      <div styleName="city">לונדון</div>
+                       </div>
 
 
             </div>

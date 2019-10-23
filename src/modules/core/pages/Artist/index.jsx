@@ -2,6 +2,7 @@ import React, { PureComponent } from 'react';
 import Banner from '@/modules/common/components/Banner';
 import Slider from '@/modules/common/components/Slider';
 import EventsList from '@/modules/common/components/EventsList';
+
 // import { withModal } from '@/modules/core/hoc/withModal';
 import './style.scss';
 
