@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react';
 import Banner from '@/modules/common/components/Banner';
 import Slider from '@/modules/common/components/Slider';
+import EventsList from '@/modules/common/components/EventsList';
 // import { withModal } from '@/modules/core/hoc/withModal';
 import './style.scss';
 
@@ -16,6 +17,7 @@ import './style.scss';
                   <h3 styleName="subtitle">באווירה קצת אחרת!</h3>
               <Slider />
                   <p styleName="describtion">היא השתלטה על כל פלייליסט אפשרי עם השיר .. בשנה שעברה וכעת מוכיחה לנו שהיא הרבה יותר אישה עם להיט אחד</p>
+                  <EventsList />
             </div>
         );
     }
