@@ -17,9 +17,7 @@ class Slider extends React.Component {
 
         return (
             <div styleName="gallery">
-                <div styleName="gallery2">
-            בחר את האירועים הפופולריים ביותר
-                </div>
+                <div style={{ fontSize:'20px' }}>בחר את האירועים הפופולריים ביותר</div>
                 <div style={{ marginBottom:'10px' }}>
             !אנחנו כאן בשבילך
                 </div>
