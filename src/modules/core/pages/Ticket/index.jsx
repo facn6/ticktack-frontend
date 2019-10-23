@@ -3,6 +3,7 @@ import Banner from '@/modules/common/components/Banner';
 import DetailsArtistContainer from '@/modules/common/components/DetailsArtistContainer';
 import './style.scss';
 
+
 export default class Ticket extends PureComponent {
 
     render() {
@@ -12,6 +13,7 @@ export default class Ticket extends PureComponent {
 
                 <DetailsArtistContainer />
             </div>
+
         );
     }
 
