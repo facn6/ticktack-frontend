@@ -1,24 +1,22 @@
-@import 'theme/utils';
+@import "theme/utils";
+.banner {
+    // max-height:px;
+    height: 300px;
 
-.main-img{
-max-width: 100%;
-}
-.main-img-title{
-    position: absolute;
-    max-height: 45px;
-    top: 23%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color:white;
-    min-width: 70%;
-    font-size: 1em;
-.main-title{
-    font-weight: bold;
-    text-align: center;
-}
-.sub-title{
-    text-align: center;
+    .main-img {
+        max-width: 100%;
+    }
+    .main-img-title {
+        text-align: right;
+        padding-bottom: 20%;
+        transform: translate(-10%, -50%);
+        color: white;
 
-
-}
+        .main-title {
+            font-weight: bold;
+        }
+        .sub-title {
+            font-size: 35px;
+        }
+    }
 }
