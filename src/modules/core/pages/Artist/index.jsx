@@ -19,8 +19,16 @@ import './style.scss';
                   <h3 styleName="subtitle">באווירה קצת אחרת!</h3>
               <Slider />
                   <p styleName="describtion">היא השתלטה על כל פלייליסט אפשרי עם השיר .. בשנה שעברה וכעת מוכיחה לנו שהיא הרבה יותר אישה עם להיט אחד</p>
-                  <EventsList />
                   <HotDestinations />
+                  <div style={{ marginBottom:'30px' }}>
+                    <h1 styleName="title">כל האירועים של אן מארי</h1>
+                  <EventsList />
+                  <EventsList />
+                  <EventsList />
+                  <EventsList />
+
+                  </div>
+
             </div>
         );
     }
