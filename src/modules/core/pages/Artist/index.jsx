@@ -3,11 +3,27 @@ import Banner from '@/modules/common/components/Banner';
 import Slider from '@/modules/common/components/Slider';
 import EventsList from '@/modules/common/components/EventsList';
 import HotDestinations from '@/modules/common/components/HotDestinations';
+import EventDrop from '@/modules/common/components/EventDrop';
+
 
 // import { withModal } from '@/modules/core/hoc/withModal';
 import './style.scss';
 
  export default class Artist extends PureComponent {
+ state = {
+    display: false,
+  };
+
+
+   changeState= () => {
+       if (this.state.display === false) {
+    this.setState({ display: true });
+       } else {
+      this.setState({ display: false });
+         }
+
+}
+
     render() {
       console.log(this.props.modal);
         return (
@@ -22,7 +38,8 @@ import './style.scss';
                   <HotDestinations />
                   <div style={{ marginBottom:'30px' }}>
                     <h1 styleName="title">כל האירועים של אן מארי</h1>
-                  <EventsList />
+                  <EventsList changeState={this.changeState}/>
+                      {  this.state.display ? < EventDrop /> : null }
 
                   </div>
 

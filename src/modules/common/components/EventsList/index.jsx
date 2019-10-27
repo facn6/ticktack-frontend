@@ -7,7 +7,7 @@ export default class EventsList extends React.Component {
     render() {
         return (
             <div styleName="list">
-                <Rectangle time="12.03.2019" location="פריז" />
+                <Rectangle changeState={this.props.changeState} time="12.03.2019" location="פריז" />
             </div>
         );
     }
