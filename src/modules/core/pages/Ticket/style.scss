@@ -1,5 +1,10 @@
 @import 'theme/utils';
 
 .ticket-page{
-    background-color: rgb(243, 232, 232);
+    background-color: rgba(243, 232, 232, 0.856);
+    .ticket-detail{
+        direction:rtl;
+        font-size: 20px;
+        margin-right:10%;
+    }
 }
