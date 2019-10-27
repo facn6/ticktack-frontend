@@ -39,7 +39,7 @@ import './style.scss';
                   <div style={{ marginBottom:'30px' }}>
                     <h1 styleName="title">כל האירועים של אן מארי</h1>
                   <EventsList changeState={this.changeState}/>
-                      {  this.state.display ? < EventDrop /> : null }
+                      {  this.state.display ? < EventDrop changeState={this.changeState} /> : null }
 
                   </div>
 
