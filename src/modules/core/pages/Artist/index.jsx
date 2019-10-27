@@ -4,6 +4,7 @@ import Slider from '@/modules/common/components/Slider';
 import EventsList from '@/modules/common/components/EventsList';
 import HotDestinations from '@/modules/common/components/HotDestinations';
 import EventDrop from '@/modules/common/components/EventDrop';
+import HotDrop from '@/modules/common/components/HotDrop';
 
 
 // import { withModal } from '@/modules/core/hoc/withModal';
@@ -12,6 +13,7 @@ import './style.scss';
  export default class Artist extends PureComponent {
  state = {
     display: false,
+    drop: false,
   };
 
 
@@ -20,6 +22,15 @@ import './style.scss';
     this.setState({ display: true });
        } else {
       this.setState({ display: false });
+         }
+
+}
+
+   changeStateHot= () => {
+       if (this.state.drop === false) {
+    this.setState({ drop: true });
+       } else {
+      this.setState({ drop: false });
          }
 
 }
@@ -35,10 +46,11 @@ import './style.scss';
                   <h3 styleName="subtitle">באווירה קצת אחרת!</h3>
               <Slider />
                   <p styleName="describtion">היא השתלטה על כל פלייליסט אפשרי עם השיר .. בשנה שעברה וכעת מוכיחה לנו שהיא הרבה יותר אישה עם להיט אחד</p>
-                  <HotDestinations />
-                  <div style={{ marginBottom:'30px' }}>
+                  <HotDestinations changeStateHot={this.changeStateHot} />
+                {  this.state.drop ? < HotDrop changeState={this.changeState} /> : null }
+                <div styleName="eventlist">
                     <h1 styleName="title">כל האירועים של אן מארי</h1>
-                  <EventsList changeState={this.changeState}/>
+                   <EventsList changeState={this.changeState} />
                       {  this.state.display ? < EventDrop changeState={this.changeState} /> : null }
 
                   </div>
