@@ -3,6 +3,7 @@ import Banner from '@/modules/common/components/Banner';
 import Slider from '@/modules/common/components/Slider';
 import EventsList from '@/modules/common/components/EventsList';
 import HotDestinations from '@/modules/common/components/HotDestinations';
+import Rectangle from '@/modules/common/components/Rectangle';
 
 // import { withModal } from '@/modules/core/hoc/withModal';
 import './style.scss';
@@ -18,9 +19,10 @@ import './style.scss';
                 <h3 styleName="subtitle">כולכם מוזמנים לקונצרטים</h3>
                   <h3 styleName="subtitle">באווירה קצת אחרת!</h3>
               <Slider />
-                  <p styleName="describtion">היא השתלטה על כל פלייליסט אפשרי עם השיר .. בשנה שעברה וכעת מוכיחה לנו שהיא הרבה יותר אישה עם להיט אחד</p>
+                <p styleName="describtion">היא השתלטה על כל פלייליסט אפשרי עם השיר .. בשנה שעברה וכעת מוכיחה לנו שהיא הרבה יותר אישה עם להיט אחד</p>
                   <HotDestinations />
-                  <div style={{ marginBottom:'30px' }}>
+                <Rectangle location="אמסטרדם" time="7.03.2019"/>
+                  <div style={{  }}>
                     <h1 styleName="title">כל האירועים של אן מארי</h1>
                   <EventsList />
 
