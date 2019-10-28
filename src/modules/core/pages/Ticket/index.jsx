@@ -31,6 +31,7 @@ export default class Ticket extends PureComponent {
                 </div>
 
             </div>
+
         );
     }
 
