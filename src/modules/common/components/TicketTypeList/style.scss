@@ -1,0 +1,27 @@
+
+        .parent{
+        direction: rtl;
+        background-color: white;
+        padding:10px 3px 0px 3px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: space-between;
+        margin:10px 5px 0px 5px;
+        color:rgb(6, 170, 219);
+        .ticket-loc{
+            margin: 5px 15px 0px 0px;
+            font-size:15px;
+        }
+        .price-div{
+            display: flex;
+            flex-direction: column;
+            margin-left:5px;
+            .price{
+
+            }
+            .price-detail{
+                font-size:10px;
+            }
+        }    
+    }
