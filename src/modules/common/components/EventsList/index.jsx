@@ -8,7 +8,6 @@ export default class EventsList extends React.Component {
         return (
             <div styleName="list">
                 <Rectangle time="12.03.2019" location="פריז" />
-                <Rectangle time="17.03.2019" location="לונדון" />
             </div>
         );
     }
