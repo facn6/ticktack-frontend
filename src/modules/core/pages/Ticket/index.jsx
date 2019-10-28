@@ -29,8 +29,8 @@ export default class Ticket extends PureComponent {
                     <TicketDateList />
                     <TicketDetails />
                 </div>
-
             </div>
+
         );
     }
 
