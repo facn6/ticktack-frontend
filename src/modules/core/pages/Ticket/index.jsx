@@ -1,20 +1,21 @@
 import React, { PureComponent } from 'react';
 import Banner from '@/modules/common/components/Banner';
+
+import NavSlider from '@/modules/common/components/NavSlider';
 import DetailsArtistContainer from '@/modules/common/components/DetailsArtistContainer';
 import ImageZoomer from '@/modules/common/components/ImageZoomer';
 import TicketDetails from '@/modules/common/components/TicketDetails';
 import TicketTypeList from '@/modules/common/components/TicketTypeList';
 import TicketDateList from '@/modules/common/components/TicketDateList';
-
 import './style.scss';
 
-
 export default class Ticket extends PureComponent {
-
     render() {
         return (
             <div styleName="ticket-page">
-                <Banner />
+               <div styleName="top-banner">
+                 <Banner />
+                </div>
                 <DetailsArtistContainer />
                 <p styleName="ticket-detail">פרטי כרטיסים</p>
                 <ImageZoomer />
@@ -29,9 +30,8 @@ export default class Ticket extends PureComponent {
                     <TicketDateList />
                     <TicketDetails />
                 </div>
-
             </div>
+
         );
     }
-
 }

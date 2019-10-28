@@ -14,7 +14,7 @@ class Slider extends React.Component {
     }
 
     render() {
-
+console.log(this.props);
         return (
             <div styleName="gallery">
                 <div style={{ fontSize:'20px' }}>בחר את האירועים הפופולריים ביותר</div>
