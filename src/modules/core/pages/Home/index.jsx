@@ -1,14 +1,31 @@
 import React, { PureComponent } from 'react';
-import Image from '@/modules/common/components/Image';
+
+import BannerWithButton from '@/modules/common/components/BannerWithButton';
+import RotatingCube from '@/modules/common/components/RotatingCube';
+import EventCard from '@/modules/common/components/EventCard';
+import Banner from '@/modules/common/components/Banner';
+
 import Slider from '@/modules/common/components/Slider';
+import './style.scss';
 
 export default class Home extends PureComponent {
-  render() {
-    return (
-      <div>
-        <Image />
-        <Slider />
-      </div>
-    );
-  }
+
+    render() {
+        return (
+            <div>
+                <BannerWithButton />
+                <Slider />
+                <Banner />
+                <RotatingCube />
+                <Banner />
+                <p styleName="last-event-label">חבילות או אירועים שמשתמשים צפו לאחרונה</p>
+                <EventCard />
+                <EventCard />
+                <EventCard />
+            </div>
+
+
+        );
+    }
+
 }

@@ -1,7 +1,8 @@
 import React from 'react';
 import classnames from 'classnames';
-import './style.scss';
+import { Link } from 'react-router';
 
+import './style.scss';
 
 class Sidebar extends React.Component {
 
@@ -24,7 +25,7 @@ class Sidebar extends React.Component {
                     </div>
                 </div>
                 <div styleName={classnames('dropdown', { 'open-dropdown':this.state['2'] })}>
-                    <button styleName={classnames('dropdown-btn', { 'open-dropdown-button':this.state['2'] })} onClick={() => this.setState({ '2': !this.state['2'] })}>הופעות</button>
+                    <Link to="/tickets"> <button styleName={classnames('dropdown-btn', { 'open-dropdown-button':this.state['2'] })} onClick={() => this.setState({ '2': !this.state['2'] })}>הופעות</button> </Link>
                     <div styleName="dropdown-container">
                         <a href="/" styleName="dropdown-children">Link 1</a>
                         <a href="/" styleName="dropdown-children">Link 2</a>

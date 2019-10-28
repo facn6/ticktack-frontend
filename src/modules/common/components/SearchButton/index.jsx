@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.scss';
 
-class Button extends React.Component {
+class SearchButton extends React.Component {
 
     render() {
         return (
@@ -12,4 +12,4 @@ class Button extends React.Component {
     }
 
 }
-export default Button;
+export default SearchButton;
