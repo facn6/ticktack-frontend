@@ -1,0 +1,19 @@
+.title{
+  font-size: 25px;
+}
+
+.hotsection{
+  display: flex;
+  flex-direction: row;
+justify-content: flex-end;
+  align-items: baseline;
+  margin: 10px 10px;
+
+}
+
+.icon{
+  height: 30px;
+  width: 30px;
+  margin-left: 5px;
+  margin-right: 5px;
+}

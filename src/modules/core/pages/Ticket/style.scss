@@ -1,0 +1,23 @@
+@import 'theme/utils';
+
+.top-banner{
+    height: 20vh;
+}
+
+.ticket-page{
+    background-color: rgba(243, 232, 232, 0.856);
+    .ticket-detail{
+        direction:rtl;
+        font-size: 20px;
+        margin-right:10%;
+    }
+    .event-title{
+        direction:rtl;
+        margin:10px 20px 0px 0px;
+        font-size: 17px;
+    }
+    .ticket-events{
+        height:150px;
+    }
+
+}
