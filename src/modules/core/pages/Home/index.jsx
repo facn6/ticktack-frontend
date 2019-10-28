@@ -15,7 +15,7 @@ export default class Home extends PureComponent {
         return (
             <div>
                 <BannerWithButton />
-                <Slider />
+                <Slider kira={120} />
                 <Banner />
                 <RotatingCube />
                 <Banner />
