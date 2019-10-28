@@ -1,17 +1,15 @@
 import React, { PureComponent } from 'react';
-
 import BannerWithButton from '@/modules/common/components/BannerWithButton';
 import RotatingCube from '@/modules/common/components/RotatingCube';
 import EventCard from '@/modules/common/components/EventCard';
 import Banner from '@/modules/common/components/Banner';
-
 import Slider from '@/modules/common/components/Slider';
 import './style.scss';
 
 export default class Home extends PureComponent {
 
     render() {
-      console.log(this.props.modal);
+        console.log(this.props.modal);
         return (
             <div>
                 <BannerWithButton />
@@ -28,4 +26,5 @@ export default class Home extends PureComponent {
 
         );
     }
-  }
+
+}

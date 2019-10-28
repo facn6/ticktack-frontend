@@ -10,7 +10,6 @@ class Footer extends React.Component {
             <div styleName="field-div">
                 <div styleName="title">
           לקבלת דיוור על אירועים ומבצעים שווים
-<<<<<<< HEAD
 
           </div>
           <div>
@@ -26,22 +25,6 @@ class Footer extends React.Component {
           </div>
           <img styleName="logo-footer" src={require('@/assets/logos/logo-footer.svg')} alt="tick-tack-img" />
             <div>
-=======
-                </div>
-                <div>
-                    <input
-                        styleName="field"
-                        type="text"
-                        id="input"
-                        placeholder="הזן כתובת מייל"
-                    />
-                </div>
-                <div>
-                    <button styleName="send">שלח</button>
-                </div>
-                <img styleName="logo-footer" src={require('@/assets/logos/logo-footer.svg')} alt="tick-tack-img" />
-                <div>
->>>>>>> footer
 
                     <img styleName="icon-footer" src={require('@/assets/icons/youtube.svg')} alt="tick-tack-img" />
                     <img styleName="icon-footer" src={require('@/assets/icons/tripadvisor.svg')} alt="tick-tack-img" />
