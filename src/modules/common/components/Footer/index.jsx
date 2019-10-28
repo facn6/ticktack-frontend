@@ -7,9 +7,10 @@ class Footer extends React.Component {
 
     render() {
         return (
-          <div styleName="field-div">
-          <div styleName="title">
+            <div styleName="field-div">
+                <div styleName="title">
           לקבלת דיוור על אירועים ומבצעים שווים
+
           </div>
           <div>
           <input
