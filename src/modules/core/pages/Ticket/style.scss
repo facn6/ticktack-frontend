@@ -1,5 +1,9 @@
 @import 'theme/utils';
 
+.top-banner{
+    height: 20vh;
+}
+
 .ticket-page{
     background-color: rgba(243, 232, 232, 0.856);
     .ticket-detail{
@@ -15,4 +19,5 @@
     .ticket-events{
         height:150px;
     }
+
 }
