@@ -5,3 +5,4 @@ export Sales from './Sales';
 export Events from './Events';
 export Ticket from './Ticket';
 export NotFound from './NotFound';
+export Artist from './Artist';
