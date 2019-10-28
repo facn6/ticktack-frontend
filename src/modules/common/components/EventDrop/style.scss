@@ -1,0 +1,43 @@
+.container{
+display: flex;
+flex-direction: row;
+margin-top: 10px;
+background-color: white;
+}
+
+.img{
+width: 50%;
+}
+
+.side{
+
+}
+
+.main-title{
+text-align: center;
+font-weight: bold;
+}
+
+.buttona{
+  background-color: white;
+  margin-left: 5px;
+  width: 40%;
+  margin-top: 10px;
+  border-radius: 1px;
+  border: 0.5px solid black;
+}
+
+.buttonb{
+  background-color: blue;
+  margin-left: 5px;
+  width: 40%;
+  margin-top: 10px;
+  border-radius: 1px;
+  border: 0.5px solid black;
+}
+
+.buttons{
+  display: flex;
+  justify-content: center;
+
+}
