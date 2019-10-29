@@ -1,0 +1,83 @@
+@import 'theme/utils';
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    border: 13px ;
+    width: 90%;
+    margin: auto;
+    margin-bottom:5%;
+    font-family: arial;
+    
+    .event-img{
+        text-align: center;
+        width:100%;
+        height:250px;
+        border-radius: 15px 15px 0px 0px;
+    }
+
+            .mashrom{
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                background-color: white;
+                bottom: -30px;
+                margin-left: 10px;
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                
+            .ball-icon{
+                display: flex;
+                width:30px;
+                height: 30px;
+                flex-direction: column;
+                align-items: center;
+
+            }
+
+        }
+        
+    
+      
+    
+    .card-content{
+        text-align: right;
+        margin-top:10%;
+        padding-bottom: 20px;
+        margin-right: 15px;
+    
+        .title{
+            color:rgb(33, 160, 199);
+            font-size:20px;
+            margin-top: 20px;
+            }
+        .sub-title {
+            color: grey;
+            font-size: 13px;
+        }
+        .message{
+            display: flex;
+            flex-direction: row;
+            font-size:13px;
+            direction: rtl;
+        
+        }
+    }
+    .card-price{
+        text-align: left;
+        direction: rtl;
+        margin-top: -25%;
+        margin-left: 20px;
+        .card-price-title{
+            font-size: 13px;
+        }
+        .price{
+            font-size: 20px;
+        }
+    }
+  }
+
+  

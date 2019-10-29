@@ -2,12 +2,11 @@ import React, { PureComponent } from 'react';
 import { asyncConnect } from 'redux-connect';
 import { connect } from 'quick-redux';
 import api from '@/helpers/api';
-import BannerWithButton from '@/modules/common/components/BannerWithButton';
-import RotatingCube from '@/modules/common/components/RotatingCube';
-import EventCard from '@/modules/common/components/EventCard';
 import Banner from '@/modules/common/components/Banner';
-
-import Slider from '@/modules/common/components/Slider';
+import SaleNavbar from '@/modules/common/components/SaleNavbar';
+import EventCard from '@/modules/common/components/EventCard';
+import ArtistCard from '@/modules/common/components/ArtistCard';
+import SportCard from '@/modules/common/components/SportCard';
 import './style.scss';
 
 @asyncConnect([
@@ -29,8 +28,7 @@ import './style.scss';
         setEventTickets: actions.core.setEventTickets,
     },
 }))
-
-class Home extends PureComponent {
+class Sales extends PureComponent {
 
     componentDidMount() {
         const { actions, tickets } = this.props;
@@ -38,6 +36,7 @@ class Home extends PureComponent {
         // adds the event tickets to redux, in case
         // we need to use them somewhere else
         actions.setEventTickets(tickets);
+
     }
 
 
@@ -45,20 +44,20 @@ class Home extends PureComponent {
         const { tickets } = this.props;
         return (
             <div>
-                <BannerWithButton />
-                <Slider kira={120} />
                 <Banner />
-                <RotatingCube />
+                <SaleNavbar />
+                <SportCard />
+                <EventCard event={tickets[0]} />
+                <ArtistCard />
+                <a href="/events" styleName="a-sales">לעוד מבצעים>></a>
                 <Banner />
                 <p styleName="last-event-label">חבילות או אירועים שמשתמשים צפו לאחרונה</p>
                 {tickets.map((item) => (
                     <EventCard event={item} />
                 ))}
             </div>
-
-
         );
     }
 
 }
-export default Home;
+export default Sales;
