@@ -4,7 +4,7 @@ import { IndexRoute, Route } from 'react-router';
 import { RouterMiddleware } from '@/helpers/router/middleware';
 
 import App from '@/modules/core/components/App';
-import { Error, Home, Ticket, Artist, Package, Events, NotFound } from '@/modules/core/pages';
+import { Error, Home, Ticket, Artist, Package, Events, Sales, NotFound } from '@/modules/core/pages';
 
 const middleware = new RouterMiddleware();
 
@@ -17,6 +17,7 @@ const routes = (
             <Route path="/artist" component={Artist} />
             <Route path="/package" component={Package} />
             <Route path="/events" component={Events} />
+            <Route path="/sales" component={Sales} />
 
 
             <Route path="*" component={NotFound} status={404} />
