@@ -6,10 +6,8 @@ class EventCard extends React.Component {
 
     render() {
         const { event } = this.props;
-        console.log('event', event);
-        console.log(this.props);
         if (event === undefined) {
-            console.log('WAittttt');
+            console.log(this.props);
 
         } else {
 

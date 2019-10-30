@@ -15,7 +15,6 @@ import './style.scss';
         key: 'tickets',
         promise: async () => {
             const res = await api.fetchTickets();
-            console.log('res ', res);
 
             if (res.fail) {
                 return [];

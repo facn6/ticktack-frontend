@@ -4,7 +4,6 @@ import { IndexRoute, Route } from 'react-router';
 import { RouterMiddleware } from '@/helpers/router/middleware';
 
 import App from '@/modules/core/components/App';
-
 import { Error, Home, Ticket, Artist, Package, Events, Sales, NotFound } from '@/modules/core/pages';
 
 const middleware = new RouterMiddleware();

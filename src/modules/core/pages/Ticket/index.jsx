@@ -17,6 +17,7 @@ export default class Ticket extends PureComponent {
                 <div>
                     <Banner />
                 </div>
+                <NavSlider />
                 <DetailsArtistContainer />
                 <p styleName="ticket-detail">פרטי כרטיסים</p>
                 <ImageZoomer />

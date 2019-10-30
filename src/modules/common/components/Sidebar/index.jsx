@@ -17,45 +17,23 @@ class Sidebar extends React.Component {
             <div styleName={classnames('sidebar', { 'openSidebar':this.props.open })}>
                 <button styleName="sidebar-close" onClick={this.props.close}>X</button>
                 <div styleName={classnames('dropdown', { 'open-dropdown':this.state['1'] })}>
-                    <Link to="/sales"><button styleName={classnames('dropdown-btn', { 'open-dropdown-button':this.state['1'] })} onClick={() => this.setState({ '1': !this.state['1'] })}>מבצעים חמים</button></Link>
-                    <div styleName="dropdown-container">
-                        <a href="/" styleName="dropdown-children">Link 1</a>
-                        <a href="/" styleName="dropdown-children">Link 2</a>
-                        <a href="/" styleName="dropdown-children">Link 3</a>
-                    </div>
+                    <Link to="/" onClick={this.props.close}> <button styleName={classnames('dropdown-btn', { 'open-dropdown-button':this.state['1'] })} onClick={() => this.setState({ '1': !this.state['1'] })}>דף ראשי</button> </Link>
                 </div>
                 <div styleName={classnames('dropdown', { 'open-dropdown':this.state['2'] })}>
-                    <Link to="/tickets"> <button styleName={classnames('dropdown-btn', { 'open-dropdown-button':this.state['2'] })} onClick={() => this.setState({ '2': !this.state['2'] })}>הופעות</button> </Link>
-                    <div styleName="dropdown-container">
-                        <a href="/" styleName="dropdown-children">Link 1</a>
-                        <a href="/" styleName="dropdown-children">Link 2</a>
-                        <a href="/" styleName="dropdown-children">Link 3</a>
-                    </div>
+                    <Link to="/events" onClick={this.props.close}> <button styleName={classnames('dropdown-btn', { 'open-dropdown-button':this.state['2'] })} onClick={() => this.setState({ '2': !this.state['2'] })}>הופעות</button> </Link>
                 </div>
                 <div styleName={classnames('dropdown', { 'open-dropdown':this.state['3'] })}>
-                    <button styleName={classnames('dropdown-btn', { 'open-dropdown-button':this.state['3'] })} onClick={() => this.setState({ '3': !this.state['3'] })}>ספורט</button>
-                    <div styleName="dropdown-container">
-                        <a href="/" styleName="dropdown-children">Link 1</a>
-                        <a href="/" styleName="dropdown-children">Link 2</a>
-                        <a href="/" styleName="dropdown-children">Link 3</a>
-                    </div>
+                    <Link to="/artist" onClick={this.props.close}><button styleName={classnames('dropdown-btn', { 'open-dropdown-button':this.state['3'] })} onClick={() => this.setState({ '3': !this.state['3'] })}>אומנים</button></Link>
                 </div>
                 <div styleName={classnames('dropdown', { 'open-dropdown':this.state['4'] })}>
                     <button styleName={classnames('dropdown-btn', { 'open-dropdown-button':this.state['4'] })} onClick={() => this.setState({ '4': !this.state['4'] })}> אטרקציות ו מחזות זמר </button>
-                    <div styleName="dropdown-container">
-                        <a href="/" styleName="dropdown-children">Link 1</a>
-                        <a href="/" styleName="dropdown-children">Link 2</a>
-                        <a href="/" styleName="dropdown-children">Link 3</a>
-                    </div>
                 </div>
                 <div styleName={classnames('dropdown', { 'open-dropdown':this.state['5'] })}>
                     <button styleName={classnames('dropdown-btn', { 'open-dropdown-button':this.state['5'] })} onClick={() => this.setState({ '5': !this.state['5'] })}>פסטיבלים
                     </button>
-                    <div styleName="dropdown-container">
-                        <a href="/" styleName="dropdown-children">Link 1</a>
-                        <a href="/" styleName="dropdown-children">Link 2</a>
-                        <a href="/" styleName="dropdown-children">Link 3</a>
-                    </div>
+                </div>
+                <div styleName={classnames('dropdown', { 'open-dropdown':this.state['6'] })}>
+                    <Link to="/sales" onClick={this.props.close}><button styleName={classnames('dropdown-btn', { 'open-dropdown-button':this.state['6'] })} onClick={() => this.setState({ '6': !this.state['6'] })}>מבצעים חמים</button></Link>
                 </div>
             </div>
 

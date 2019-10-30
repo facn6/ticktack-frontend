@@ -3,20 +3,18 @@ import classnames from 'classnames';
 import './style.scss';
 
 class NavSlider extends React.Component {
+
     state = { dotsArray: [1, 2, 3].map(() => false).map((item, i) => i === 0) };
 
     componentDidMount() {
         const interval = setInterval(() => {
             if (document.readyState === 'complete') {
                 clearInterval(interval);
-                console.log('Test');
-                console.log('Position', this.slider.scrollLeft);
             }
         }, 100);
     }
 
     render() {
-        console.log('Test');
         const images = [
             require('@/assets/images/anneM.jpg'),
             require('@/assets/images/anneM1.jpg'),
@@ -34,13 +32,6 @@ class NavSlider extends React.Component {
                     ref={(el) => (this.slider = el)}
                     styleName="gallery_scroller"
                     onScroll={(event) => {
-                        console.log(
-                            'Width',
-                            Math.max(
-                                document.documentElement.clientWidth,
-                                window.innerWidth || 0,
-                            ),
-                        );
 
                         let i;
 
@@ -52,7 +43,6 @@ class NavSlider extends React.Component {
                                         // eslint-disable-next-line
                                         .map((item, index) => index === i),
                                 });
-                                console.log('BLUE');
                             }
                         }
                     }}
@@ -72,7 +62,6 @@ class NavSlider extends React.Component {
 
                 <div styleName="nav-dots">
                     {this.state.dotsArray.map((item, i) => {
-                        console.log('STATE', this.state);
                         return (
                             <div
                                 styleName={classnames('nav-dot', {
@@ -85,6 +74,7 @@ class NavSlider extends React.Component {
             </div>
         );
     }
+
 }
 
 export default NavSlider;

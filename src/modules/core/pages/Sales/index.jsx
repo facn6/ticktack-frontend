@@ -7,6 +7,7 @@ import SaleNavbar from '@/modules/common/components/SaleNavbar';
 import EventCard from '@/modules/common/components/EventCard';
 import ArtistCard from '@/modules/common/components/ArtistCard';
 import SportCard from '@/modules/common/components/SportCard';
+
 import './style.scss';
 
 @asyncConnect([
@@ -14,7 +15,6 @@ import './style.scss';
         key: 'tickets',
         promise: async () => {
             const res = await api.fetchTickets();
-            console.log('res ', res);
 
             if (res.fail) {
                 return [];

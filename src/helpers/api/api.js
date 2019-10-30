@@ -17,6 +17,24 @@ class API {
         }
     }
 
+    async fetchEvents() {
+        try {
+            const response = await this.get('/events');
+            return response.data;
+        } catch (err) {
+            return { fail: true, err };
+        }
+    }
+
+    async fetchArtists() {
+        try {
+            const response = await this.get('/artists');
+            return response.data;
+        } catch (err) {
+            return { fail: true, err };
+        }
+    }
+
     async SendEmailAdress(mail) {
         try {
 

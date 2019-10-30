@@ -11,7 +11,6 @@ import './style.scss';
 export default class Home extends PureComponent {
 
     render() {
-      console.log(this.props.modal);
         return (
             <div>
                 <BannerWithButton />
@@ -28,4 +27,5 @@ export default class Home extends PureComponent {
 
         );
     }
-  }
+
+}
