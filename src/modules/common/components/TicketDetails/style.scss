@@ -1,0 +1,77 @@
+div.sticky {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    direction:rtl;
+    left:0;
+    position: -webkit-sticky;
+    position: fixed;
+    bottom: 0;
+    transition: bottom 0.6s;
+    background-color: white;
+    padding: 10px;
+    width: 100%;
+
+    .price-detail{
+        display: flex;
+        flex-direction: column;
+        font-size: 10px;
+        margin-left: 5%;
+    }
+    .price{
+        color:rgb(91, 186, 214);
+        font-size:15px;
+    }
+    .quantity-detail{
+        display: flex;
+        flex-direction: row;
+        font-size:11px;
+        margin-left:5%;
+        .quantity-lbl{
+            margin-left:5%;
+            color:rgb(91, 186, 214);
+
+        }
+        .quantity-selection{
+            height: 17px;
+            font-size:10px;
+            width: 30px;
+            background-color:white;
+            border: 1px solid black ;
+            border-color: rgb(91, 186, 214);
+
+        }
+    }
+    .btn-section{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        text-align: center;
+        
+        .btn{
+            background-color: rgba(17, 167, 204, 0.808) ;
+            color:white;
+            font-size:11px;
+            width:90px;
+            height: 20px;
+        }
+        .btn-icon{
+            position: absolute;
+            width:15px;
+            height:15px;
+            margin-right: 5%;
+
+        }
+        .a-link{
+            color: gray;
+            text-decoration: underline;
+            cursor: auto;
+            font-size: 11px;
+        }
+  
+    }
+  }
+
+  div.sticky-hidden{
+      bottom: -70px;
+  }

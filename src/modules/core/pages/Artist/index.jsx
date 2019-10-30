@@ -4,11 +4,27 @@ import Slider from '@/modules/common/components/Slider';
 import EventsList from '@/modules/common/components/EventsList';
 import HotDestinations from '@/modules/common/components/HotDestinations';
 import Rectangle from '@/modules/common/components/Rectangle';
+import EventDrop from '@/modules/common/components/EventDrop';
+
 
 // import { withModal } from '@/modules/core/hoc/withModal';
 import './style.scss';
 
  export default class Artist extends PureComponent {
+ state = {
+    display: false,
+  };
+
+
+   changeState= () => {
+       if (this.state.display === false) {
+    this.setState({ display: true });
+       } else {
+      this.setState({ display: false });
+         }
+
+}
+
     render() {
       console.log(this.props.modal);
         return (
@@ -24,7 +40,8 @@ import './style.scss';
                 <Rectangle location="אמסטרדם" time="7.03.2019"/>
                   <div style={{  }}>
                     <h1 styleName="title">כל האירועים של אן מארי</h1>
-                  <EventsList />
+                  <EventsList changeState={this.changeState}/>
+                      {  this.state.display ? < EventDrop /> : null }
 
                   </div>
 
