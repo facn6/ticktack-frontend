@@ -10,11 +10,12 @@ import TicketDateList from '@/modules/common/components/TicketDateList';
 import './style.scss';
 
 export default class Ticket extends PureComponent {
+
     render() {
         return (
             <div styleName="ticket-page">
-               <div styleName="top-banner">
-                 <Banner />
+                <div>
+                    <Banner />
                 </div>
                 <DetailsArtistContainer />
                 <p styleName="ticket-detail">פרטי כרטיסים</p>
@@ -34,4 +35,5 @@ export default class Ticket extends PureComponent {
 
         );
     }
+
 }
