@@ -1,18 +1,29 @@
 import React from 'react';
+import Dropdown from 'react-dropdown';
 import './style.scss';
+import Input from '../Input';
 
 
 class PopUp extends React.Component {
 
 
-render() {
-    return (
-      <div>
-     Enter Your Info
-     <form> Full Name: <input type="text"/>
-           E-mail: <input type="text"/>
-           <button styleName="button">Submit</button>
-     </form>
+    render() {
+
+const options = [
+  'התעניינות באירוע', 'מבצעים שווים'
+];
+      return (
+      <div styleName="container">
+      <form styleName="parent">
+          <Dropdown  options={options}    styleName="dropdown"   placeholder="נושא פניה" />
+      <Input placeholder="שם פרטי  *" />
+      <Input placeholder="מספר טלפון  *" />
+      <Input placeholder="כתובת מייל" />
+
+    <div styleName="note">  *שדות מילוי חובה</div>
+
+      <button styleName="button">שלח</button>
+      </form>
      </div>
         );
 
