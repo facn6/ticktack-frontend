@@ -1,0 +1,30 @@
+.menu2 {
+    width: 100%;
+    font-size: 13px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin:8% 0 8% 0;
+    direction: rtl;
+    .sales-tab{
+      color: rgb(0, 183, 255);
+      border-bottom: 2px solid rgb(0, 183, 255);
+      transition: 0.5s;
+    }
+  }
+  
+  
+  .menubar a {
+    display: block;
+    color: black;
+    border: 2px solid transparent;
+    background: transparent;
+    padding: 2px 5px;
+    border-bottom: 2px solid transparent;
+  }
+  
+  .menubar a:hover {
+    color: rgb(0, 183, 255);
+    border-bottom: 2px solid rgb(0, 183, 255);
+    transition: 0.5s;
+  }
