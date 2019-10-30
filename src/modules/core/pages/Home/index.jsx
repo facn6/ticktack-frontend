@@ -42,11 +42,12 @@ class Home extends PureComponent {
 
 
     render() {
+
         const { tickets } = this.props;
         return (
             <div>
                 <BannerWithButton />
-                <Slider kira={120} />
+                <Slider />
                 <Banner />
                 <RotatingCube />
                 <Banner />
@@ -61,4 +62,5 @@ class Home extends PureComponent {
     }
 
 }
+
 export default Home;
