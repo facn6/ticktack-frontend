@@ -10,13 +10,25 @@ class API {
 
     async fetchTickets() {
         try {
-
             const response = await this.get('/tickets');
+            return response.data;
+        } catch (err) {
+            return { fail: true, err };
+        }
+    }
+
+    async SendEmailAdress(mail) {
+        try {
+
+            const response = await this.post('/sendEmail', {
+                mail,
+            });
             return response.data;
 
         } catch (err) {
             return { fail: true, err };
         }
+
     }
 
 

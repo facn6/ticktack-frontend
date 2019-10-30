@@ -1,10 +1,21 @@
 import React from 'react';
+import api from '@/helpers/api';
 import './style.scss';
-
 // eslint-disable-next-line no-return-assign
 
 class Footer extends React.Component {
 
+    state = { emailAdress:'' };
+
+    SendEmail = async (mail) => {
+        try {
+
+            await api.SendEmailAdress(mail);
+        } catch (err) {
+            console.log(err);
+        }
+
+    }
     render() {
         return (
             <div styleName="field-div">
@@ -14,13 +25,14 @@ class Footer extends React.Component {
                 <div>
                     <input
                         styleName="field"
-                        type="text"
+                        type="email"
                         id="input"
                         placeholder="הזן כתובת מייל"
+                        onChange={(e) => this.setState({ emailAdress:e.target.value })}
                     />
                 </div>
                 <div>
-                    <button styleName="send">שלח</button>
+                    <button styleName="send" onClick={() => this.SendEmail(this.state.emailAdress)}>שלח</button>
                 </div>
                 <img styleName="logo-footer" src={require('@/assets/logos/logo-footer.svg')} alt="tick-tack-img" />
                 <div>

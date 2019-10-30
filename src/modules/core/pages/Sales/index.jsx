@@ -60,4 +60,5 @@ class Sales extends PureComponent {
     }
 
 }
+
 export default Sales;
