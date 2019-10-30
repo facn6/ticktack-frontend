@@ -33,7 +33,7 @@ class Sidebar extends React.Component {
                     </button>
                 </div>
                 <div styleName={classnames('dropdown', { 'open-dropdown':this.state['6'] })}>
-                    <Link to="/sale" onClick={this.props.close}><button styleName={classnames('dropdown-btn', { 'open-dropdown-button':this.state['6'] })} onClick={() => this.setState({ '6': !this.state['6'] })}>מבצעים חמים</button></Link>
+                    <Link to="/sales" onClick={this.props.close}><button styleName={classnames('dropdown-btn', { 'open-dropdown-button':this.state['6'] })} onClick={() => this.setState({ '6': !this.state['6'] })}>מבצעים חמים</button></Link>
                 </div>
             </div>
 

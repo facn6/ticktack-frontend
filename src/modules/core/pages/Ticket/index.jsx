@@ -14,7 +14,10 @@ export default class Ticket extends PureComponent {
     render() {
         return (
             <div styleName="ticket-page">
-                <Banner />
+                <div>
+                    <Banner />
+                </div>
+                <NavSlider />
                 <DetailsArtistContainer />
                 <p styleName="ticket-detail">פרטי כרטיסים</p>
                 <ImageZoomer />
