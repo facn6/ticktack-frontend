@@ -10,10 +10,8 @@ class API {
 
     async fetchTickets() {
         try {
-
             const response = await this.get('/tickets');
             return response.data;
-
         } catch (err) {
             return { fail: true, err };
         }

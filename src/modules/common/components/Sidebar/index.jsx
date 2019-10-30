@@ -17,7 +17,7 @@ class Sidebar extends React.Component {
             <div styleName={classnames('sidebar', { 'openSidebar':this.props.open })}>
                 <button styleName="sidebar-close" onClick={this.props.close}>X</button>
                 <div styleName={classnames('dropdown', { 'open-dropdown':this.state['1'] })}>
-                    <button styleName={classnames('dropdown-btn', { 'open-dropdown-button':this.state['1'] })} onClick={() => this.setState({ '1': !this.state['1'] })}>מבצעים חמים</button>
+                    <Link to="/sales"><button styleName={classnames('dropdown-btn', { 'open-dropdown-button':this.state['1'] })} onClick={() => this.setState({ '1': !this.state['1'] })}>מבצעים חמים</button></Link>
                     <div styleName="dropdown-container">
                         <a href="/" styleName="dropdown-children">Link 1</a>
                         <a href="/" styleName="dropdown-children">Link 2</a>
