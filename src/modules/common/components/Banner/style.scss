@@ -1,25 +1,27 @@
 @import 'theme/utils';
 .banner{
-height: 300px;
+height: 160px;
 
 .main-img{
 max-width: 100%;
 }
 .main-img-title{
     text-align: right;
-    transform: translate(-10%, -50%);
+    transform: translate(-10%, -100%);
     color:white;
     margin-left: 20px;
     margin-top: -45px;
 
 .main-title{
-    font-weight: bold;
+    font-weight: bolder;
+font-size: 15px;
 
 
 
 }
 .sub-title{
     font-size: 25px;
+    margin-top: 5px;
 
 
 }

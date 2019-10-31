@@ -10,6 +10,7 @@ import TicketDateList from '@/modules/common/components/TicketDateList';
 import './style.scss';
 
 export default class Ticket extends PureComponent {
+
     render() {
         return (
             <div styleName="ticket-page">
@@ -36,4 +37,5 @@ export default class Ticket extends PureComponent {
 
         );
     }
+
 }
