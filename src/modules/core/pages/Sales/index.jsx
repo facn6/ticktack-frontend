@@ -44,13 +44,13 @@ class Sales extends PureComponent {
         const { tickets } = this.props;
         return (
             <div>
-                <Banner />
+                <Banner title="מבצעים חמים" subtitle="הוא פשוט טקסט גולמי של תעשיית וההקלדה" img={require('@/assets/images/concert.jpg')}/>
                 <SaleNavbar />
                 <SportCard />
                 <EventCard event={tickets[0]} />
                 <ArtistCard />
                 <a href="/events" styleName="a-sales">לעוד מבצעים>></a>
-                <Banner />
+                <Banner title="באנר פרסומי" subtitle="למה לבחור בנו?" img={require('@/assets/images/barca-real.jpg')} />
                 <p styleName="last-event-label">חבילות או אירועים שמשתמשים צפו לאחרונה</p>
                 {tickets.map((item) => (
                     <EventCard event={item} />

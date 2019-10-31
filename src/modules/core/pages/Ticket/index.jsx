@@ -14,11 +14,12 @@ export default class Ticket extends PureComponent {
     render() {
         return (
             <div styleName="ticket-page">
-                <div>
-                    <Banner />
+               <div styleName="top-banner">
+                 <Banner title="מבצעים חמים" subtitle="הוא פשוט טקסט גולמי של תעשיית וההקלדה" img={require('@/assets/images/1_Anne-Marie.jpg')} />
                 </div>
-                <NavSlider />
-                <DetailsArtistContainer />
+              <div styleName="details" >
+              <DetailsArtistContainer />
+              </div>
                 <p styleName="ticket-detail">פרטי כרטיסים</p>
                 <ImageZoomer />
                 <TicketTypeList />

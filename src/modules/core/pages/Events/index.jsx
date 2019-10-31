@@ -12,9 +12,9 @@ export default class Events extends PureComponent {
     render() {
         return (
             <div styleName="events-page">
-                <Banner />
-                <Slider />
-                <Banner />
+                <Banner title="הופעות חמים" subtitle="הוא פשוט טקסט גולמי של תעשיית וההקלדה" img={require('@/assets/images/concert.jpg')}/>
+              <div styleName="slider">  <Slider /></div>
+                <Banner title="באנר פרסומי" subtitle="הוא פשוט טקסט גולמי של תעשיית וההקלדה" img={require('@/assets/images/barca-real.jpg')} />
                 <MiniEventCard />
                 <MiniEventCard />
                 <MiniEventCard />

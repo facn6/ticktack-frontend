@@ -6,10 +6,10 @@ class Banner extends React.Component {
     render() {
         return (
             <div styleName="banner">
-                <img src={require('@/assets/images/arina2.jpeg')} alt="ariana-img" styleName="main-img" />
+                <img src={this.props.img} alt="ariana-img" styleName="main-img" />
                 <div styleName="main-img-title">
-                    <div styleName="main-title">באנר פרסומי </div>
-                    <div styleName="sub-title"> הוא פשוט טקסט גולמי</div>
+                    <div styleName="main-title"> {this.props.title} </div>
+                    <div styleName="sub-title"> {this.props.subtitle}</div>
                 </div>
             </div>
         );

@@ -4,7 +4,6 @@ import { hot } from 'react-hot-loader';
 import Navbar from '@/modules/common/components/Navbar';
 import Footer from '@/modules/common/components/Footer';
 import config from '@/config';
-
 import { ModalProvider } from '@/modules/core/context/modal';
 import AppModal from '@/modules/core/components/AppModal';
 

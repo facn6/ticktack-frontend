@@ -11,4 +11,4 @@ export default class Rectangle extends React.Component {
 
         );
     }
-}
+  }

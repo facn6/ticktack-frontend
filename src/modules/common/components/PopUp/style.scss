@@ -1,0 +1,60 @@
+.button{
+  background-color:  #01A5E2;
+}
+
+.dropdown{
+  padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 90px;
+padding-right: 90px;
+border-style: solid;
+border-width: 0.05px;
+text-align: center;
+}
+
+.container{
+padding:5px 20px 5px 20px;
+}
+
+.parent{
+    display: flex;
+align-items:center;
+flex-direction: column;
+
+}
+
+input::placeholder{
+
+padding-left: 100px;
+
+}
+
+
+.button{
+  border-style: solid;
+  border-radius: 3px;
+  border-width: thin;
+  margin-top: 10px;
+  padding: 5px 18px 5px 18px;
+}
+
+.note{
+  margin-top: 5px;
+
+}
+
+.checkbox{
+  margin-left: 140px;
+}
+
+.parentcheck{
+  display: flex;
+  flex-direction: row;
+ justify-content: space-around;
+ width: 100%;
+ text-align: center;
+}
+
+.notebox{
+
+}

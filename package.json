@@ -80,6 +80,7 @@
         "react-burger-menu": "2.5.x",
         "react-datepicker": "1.6.x",
         "react-dom": "16.5.x",
+        "react-dropdown": "^1.6.4",
         "react-helmet": "5.2.x",
         "react-hot-loader": "4.3.x",
         "react-medium-image-zoom": "^3.1.2",
