@@ -14,9 +14,9 @@ export default class Home extends PureComponent {
             <div>
                 <BannerWithButton />
                 <Slider kira={120} />
-                <Banner />
+                <Banner title="באנר פרסומי" subtitle="הוא פשוט טקסט גולמי" img={require('@/assets/images/1_Anne-Marie.jpg')} />
                 <RotatingCube />
-                <Banner />
+                <Banner title="באנר פרסומי" subtitle="למה לבחור בנו?" img={require('@/assets/images/barca-real.jpg')} />
                 <p styleName="last-event-label">חבילות או אירועים שמשתמשים צפו לאחרונה</p>
                 <EventCard />
                 <EventCard />

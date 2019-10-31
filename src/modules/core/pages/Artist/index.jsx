@@ -41,15 +41,11 @@ export default class Artist extends PureComponent {
            <div styleName="background">
                <Banner title="מבצעים חמים" subtitle="הוא פשוט טקסט גולמי של תעשיית וההקלדה" img={require('@/assets/images/1_Anne-Marie.jpg')} />
 
-                <h1 styleName="title">אן מארי</h1>
-                <h3 styleName="subtitle">כולכם מוזמנים לקונצרטים</h3>
-                  <h3 styleName="subtitle">באווירה קצת אחרת!</h3>
+            <div styleName="nav">
 
-
-              <NavSlider />
-
-
+             <NavSlider />
                   <p styleName="describtion">היא השתלטה על כל פלייליסט אפשרי עם השיר .. בשנה שעברה וכעת מוכיחה לנו שהיא הרבה יותר אישה עם להיט אחד</p>
+                  </div>
                   <HotDestinations changeStateHot={this.changeStateHot} />
                 {  this.state.drop ? < HotDrop changeState={this.changeState} /> : null }
                 <div styleName="eventlist">
