@@ -35,7 +35,6 @@ export default class Artist extends PureComponent {
          }
 
 }
-
     render() {
       console.log(this.props.modal);
         return (
@@ -46,19 +45,20 @@ export default class Artist extends PureComponent {
                 <h3 styleName="subtitle">כולכם מוזמנים לקונצרטים</h3>
                   <h3 styleName="subtitle">באווירה קצת אחרת!</h3>
 
+
               <NavSlider />
+
 
                   <p styleName="describtion">היא השתלטה על כל פלייליסט אפשרי עם השיר .. בשנה שעברה וכעת מוכיחה לנו שהיא הרבה יותר אישה עם להיט אחד</p>
                   <HotDestinations changeStateHot={this.changeStateHot} />
                 {  this.state.drop ? < HotDrop changeState={this.changeState} /> : null }
                 <div styleName="eventlist">
-                  <div style={{  }}>
-                    <h1 styleName="title">כל האירועים של אן מארי</h1>
+                <h1 styleName="title">כל האירועים של אן מארי</h1>
                    <EventsList changeState={this.changeState} />
                       {  this.state.display ? < EventDrop changeState={this.changeState} /> : null }
                   </div>
-                  </div>
-            </div>
+                </div>
+
         );
     }
   }
