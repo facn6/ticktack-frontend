@@ -91,7 +91,7 @@
         "redux": "3.7.x",
         "redux-connect": "6.0.x",
         "redux-persist": "5.10.x",
-        "serialize-javascript": "1.5.x",
+        "serialize-javascript": "4.0.x",
         "serve-favicon": "2.5.x",
         "shrink-ray": "0.1.x",
         "spdy": "3.4.x",
